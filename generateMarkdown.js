@@ -32,8 +32,9 @@ function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
+  const githubLink = 'https://github.com/${data.Username}/{data.projectTitle}}';
 
-  return `# ${data.projectTitle}
+  return `## ${data.projectTitle}
 
 ## Description
 
@@ -69,6 +70,12 @@ ${licenseBadge}
 ${licenseSection}
 
 ${licenseLink}
+
+${githubLink}
+
+## Contact
+
+For any inquiries, please contact me at ${data.email}.
 `;
 }
 

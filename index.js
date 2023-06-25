@@ -3,8 +3,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown');
+
 // TODO: Create an array of questions for user input
 const questions = [
+    
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Enter Github User name:'
+    },   
+
   {
     type: 'input',
     name: 'projectTitle',
@@ -44,6 +52,11 @@ const questions = [
     type: 'input',
     name: 'credits',
     message: 'List any collaborators, third-party assets, or tutorials you used:'
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Enter your email address:'
   },
   {
     type: 'list',
