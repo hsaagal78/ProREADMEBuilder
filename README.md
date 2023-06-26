@@ -2,11 +2,11 @@
 
 ## Description
 
-To showcase the capabilities of the application.Problem Solved: Generates a professional README.md file for project repositories.
+Motivation: To showcase the capabilities of the application
 
-- Motivation: - What I Learned: During the development of this project, I learned how to use Node.js and 
-- Problem Solved: command-line interfaces effectively.
-- What I Learned: command-line interfaces effectively.
+- Motivation: Problem Solved: Generates a professional README.md file for project repositories.
+- Problem Solved: During the development of this project, I learned how to use Node.js and command-line interfaces effectively.
+- What I Learned: I extensively utilized online resources such as documentation, articles, and tutorials related to Node.js, JavaScript, and command-line interfaces
 
 ## Table of Contents (Optional)
 
@@ -17,15 +17,15 @@ To showcase the capabilities of the application.Problem Solved: Generates a prof
 
 ## Installation
 
-Clone the repository. Navigate to the project directory.Run the command `npm install` to install the dependencies.
+Clone the repository.Navigate to the project directory.Run the command `npm install` to install the dependencies.
 
 ## Usage
 
-Run the command `node index.js` to start the application.
+ Run the command `node index.js` to start the application.Follow the prompts and provide the required information.Once all the information is provided, the README.md file will be generated in the project directory.
 
 ## Credits
 
-Third-party library: Inquirer.js - Used for creating command-line prompts.
+ Third-party library: Inquirer.js - Used for creating command-line prompts.
 
 ## License
 
