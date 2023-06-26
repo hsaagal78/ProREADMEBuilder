@@ -2,7 +2,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');//this line connect to generateMarkdown.
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -63,10 +63,18 @@ const questions = [
     name: 'license',
     message: 'Choose a license for your application:',
     choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None']
-  }
+  },
+  {
+    type: 'input',
+    name: 'screenshots',
+    message: 'Enter the URLs or file paths of any screenshots (separated by commas):'
+  },
+
 ];
 
 // TODO: Create a function to write README file
+//The function takes a callback as the third argument, which will be executed once the file writing operation is complete.
+
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (error) => {
     if (error) {
