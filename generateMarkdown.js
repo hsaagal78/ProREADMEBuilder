@@ -11,21 +11,21 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) { //function generates a license link for the table of contents section in the README. If a license is selected (other than "None"), it returns
   if (license !== 'None') {  // // a Markdown link to the license section of the README. Otherwise, it returns an empty string.
-    return `\n* [License](#license)\n`;
+    return `\n* [License]\n`;
   }
   return '';
 }
 
 // Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {// If a license is selected (other than "None"), it returns a Markdown section with the license information. Otherwise, it returns an empty string.
-  if (license !== 'None') {
-    return `## License
+// function renderLicenseSection(license) {// If a license is selected (other than "None"), it returns a Markdown section with the license information. Otherwise, it returns an empty string.
+//   if (license !== 'None') {
+//     return `## License
 
-This project is licensed under the ${license} license.`;
-  }
-  return '';
-}
+// This project is licensed under the ${license} license.`;
+//   }
+//   return '';
+// }
 
 // TODO: Create a function to generate markdown for README
 //These lines of code call the helper functions to generate the license badge, license link, and license section based on the selected license.
@@ -33,7 +33,7 @@ This project is licensed under the ${license} license.`;
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
-  const licenseSection = renderLicenseSection(data.license);
+  // const licenseSection = renderLicenseSection(data.license);
   const githubLink = `https://github.com/${data.username}/${data.projectTitle}`;
   let markdown = '';
 
@@ -70,9 +70,9 @@ ${data.credits}
 
 ${licenseBadge}
 
-${licenseSection}
-
 ${licenseLink}
+
+## Github Link
 
 ${githubLink}
 
