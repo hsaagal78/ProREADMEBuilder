@@ -2,7 +2,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./lib/generateMarkdown');//this line connect to generateMarkdown.
+const {generateMarkdown, renderLicenseBadge,
+  renderLicenseLink} = require('./lib/generateMarkdown');//this line connect to generateMarkdown.
 
 // TODO: Create an array of questions for user input
 const questions = [
